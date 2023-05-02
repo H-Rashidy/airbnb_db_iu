@@ -3,15 +3,20 @@ IU_Airbnb Installation and Documentation Manual
 
 Installation:
 1-	Install MySQL on your system if it is not already installed. https://dev.mysql.com/downloads/workbench/ 
+
 2-	SET SESSION sql_mode='ANSI';
 This command sets the MySQL session to use the ANSI SQL standard mode. This means that MySQL will follow the ANSI SQL standard rules for handling queries, which may differ from the default MySQL behavior.
+
 3-	DROP DATABASE IF EXISTS IU_Airbnb;
 This command drops the database named IU_Airbnb, if it exists. If the database does not exist, this command does nothing.
+
 4-	CREATE DATABASE IU_Airbnb;
 This command creates a new database named IU_Airbnb.
+
 5-	USE IU_Airbnb;
 This command switches to the IU_Airbnb database. All subsequent queries will be executed in the context of this database.
 Installation and Configuration:
+
 6-	Run the CREATE TABLE statements for each table in the database, in the following order:
 1.	guest_profile
 2.	host_profile
@@ -36,8 +41,14 @@ Installation and Configuration:
 21.	price_calculator
 22.	review_guest
 23.	review_host
+
 7-	Once all tables are created, run the INSERT INTO statements to populate the tables with sample data.
+
+
+
 Documentation:
+
+
 1.	Introduction:
 Welcome to the documentation manual for the MySQL database schema used in our Airbnb-like platform. This manual is designed to provide a comprehensive overview of the database schema, including its tables, columns, relationships, and constraints. It is intended for developers, database administrators, and other stakeholders who need to understand how the database schema works and how to use it effectively. The manual includes detailed descriptions of each table, column, and constraint in the schema, as well as examples of how to use the database schema to perform common tasks. We hope this manual will serve as a helpful resource for anyone working with our reservation and payment processing platform.
 2.	Schema Diagram:
