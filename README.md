@@ -349,4 +349,4 @@ The table has the following columns:
 •	comment: the written comments made by the host about the guest's stay.
 •	The table has a primary key on review_host_id and foreign keys on guest_id, host_id, and reservation_id referencing guest_profile, host_profile, and reservation tables' guest_id, host_id, and reservation_id respectively.
 •	The foreign keys are set to cascade on delete and update.
-![image](https://user-images.githubusercontent.com/89315381/235567871-5141386f-4c13-4e10-9e90-2167e3ee135a.png)
+
