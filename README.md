@@ -1,19 +1,32 @@
-# airbnb_db_iu
-IU_Airbnb Installation and Documentation Manual
+# Airbnb Database IU
+## IU_Airbnb Installation and Documentation Manual
 
-Installation:
+## Installation:
+
 1-	Install MySQL on your system if it is not already installed. https://dev.mysql.com/downloads/workbench/ 
 
+```shell
 2-	SET SESSION sql_mode='ANSI';
+```
+
 This command sets the MySQL session to use the ANSI SQL standard mode. This means that MySQL will follow the ANSI SQL standard rules for handling queries, which may differ from the default MySQL behavior.
 
+```shell
 3-	DROP DATABASE IF EXISTS IU_Airbnb;
+```
+
 This command drops the database named IU_Airbnb, if it exists. If the database does not exist, this command does nothing.
 
+```shell
 4-	CREATE DATABASE IU_Airbnb;
+```
+
 This command creates a new database named IU_Airbnb.
 
+```shell
 5-	USE IU_Airbnb;
+```
+
 This command switches to the IU_Airbnb database. All subsequent queries will be executed in the context of this database.
 Installation and Configuration:
 
@@ -46,15 +59,19 @@ Installation and Configuration:
 
 
 
-Documentation:
+## Documentation:
 
 
-1.	Introduction:
+### 1.	Introduction:
 Welcome to the documentation manual for the MySQL database schema used in our Airbnb-like platform. This manual is designed to provide a comprehensive overview of the database schema, including its tables, columns, relationships, and constraints. It is intended for developers, database administrators, and other stakeholders who need to understand how the database schema works and how to use it effectively. The manual includes detailed descriptions of each table, column, and constraint in the schema, as well as examples of how to use the database schema to perform common tasks. We hope this manual will serve as a helpful resource for anyone working with our reservation and payment processing platform.
-2.	Schema Diagram:
+
+### 2.	Schema Diagram:
+ ![IU_Airbnb_DrawSQL_Final_V2](https://user-images.githubusercontent.com/89315381/235815687-c771d012-6020-4d24-a8db-5392310377d9.png)
+
  
 
-3.	Table Descriptions:
+### 3.	Table Descriptions:
+
 3.1.	Table name: guest_profile
 The table stores information about guests who have signed up on the platform.
 The table has the following columns:
